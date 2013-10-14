@@ -75,7 +75,7 @@
                         android:layout_height="fill_parent"
                         android:orientation="vertical" >
 
-                        <include layout="@layout/contact_3g_layout" >
+                        <include layout="@layout/contact_yxjf_layout" >
                         </include>
                     </LinearLayout>
 
@@ -85,7 +85,7 @@
                         android:layout_height="fill_parent"
                         android:orientation="vertical" >
 
-                        <include layout="@layout/contact_yx_layout" >
+                        <include layout="@layout/contact_3gfd_layout" >
                         </include>
                     </LinearLayout>
                 </FrameLayout>
