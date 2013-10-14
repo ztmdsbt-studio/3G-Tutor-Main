@@ -9,8 +9,10 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TabHost;
 import android.widget.TextView;
+import android.widget.TabHost.OnTabChangeListener;
 
 public class TabMainAct extends Activity {
 	@Override
@@ -25,17 +27,6 @@ public class TabMainAct extends Activity {
 	}
 
 	private void initTab() {
-		// View niTab = (View)
-		// LayoutInflater.from(this).inflate(R.layout.tabwidebg,
-		// null);
-		// TextView text0 = (TextView) niTab.findViewById(R.id.tab_label);
-		// text0.setText("ni");
-		//
-		// View woTab = (View)
-		// LayoutInflater.from(this).inflate(R.layout.tabwidebg,
-		// null);
-		// TextView text1 = (TextView) woTab.findViewById(R.id.tab_label);
-		// text1.setText("wo");
 
 		View sgTab = (View) LayoutInflater.from(this).inflate(
 				R.layout.tabwidebg, null);
@@ -52,9 +43,21 @@ public class TabMainAct extends Activity {
 		yxtv.setText("营销积分");
 		TabHost yxTabHost = (TabHost) findViewById(R.id.yxTabHost);
 		yxTabHost.setup();
-		yxTabHost.addTab(yxTabHost.newTabSpec("3GTab").setIndicator("3G辅导")
+		yxTabHost.addTab(yxTabHost.newTabSpec("3GTab").setIndicator(sgTab)
 				.setContent(R.id.tab_3gfudao));
-		yxTabHost.addTab(yxTabHost.newTabSpec("YXJifen").setIndicator("营销积分")
+		yxTabHost.addTab(yxTabHost.newTabSpec("YXJifen").setIndicator(yxTab)
 				.setContent(R.id.tab_yxjifen));
+		yxTabHost.setOnTabChangedListener(new OnTabChangeListener() {
+			@Override
+			public void onTabChanged(String tabId) {
+				if (tabId.equals("3GTab")) {
+					ListView myTabLst = (ListView) findViewById(R.id.myTabLst);
+					
+				} else {
+
+				}
+			}
+
+		});
 	}
 }

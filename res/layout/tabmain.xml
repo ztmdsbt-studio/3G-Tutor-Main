@@ -38,46 +38,59 @@
     </LinearLayout>
 
     <TabHost
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" 
         android:id="@+id/yxTabHost"
-        >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-        <TabWidget
-            android:id="@android:id/tabs"
-            android:layout_width="fill_parent"
-            android:layout_height="60dip"
-            android:layout_alignParentBottom="true"
-            android:background="@color/white" 
-            
-            >
-        </TabWidget>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
 
-        <FrameLayout
-            android:id="@android:id/tabcontent"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_above="@android:id/tabs" >
-				
             <LinearLayout
-                android:id="@+id/tab_3gfudao"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:orientation="vertical" >
-                
-                
+                android:id="@+id/tempTb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dip" >
+                </TabWidget>
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tab_yxjifen"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:orientation="vertical" >
-                <include layout="@layout/contact_tab_company_layout"></include>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tempTb" >
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/tab_3gfudao"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <include layout="@layout/contact_3g_layout" >
+                        </include>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab_yxjifen"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <include layout="@layout/contact_yx_layout" >
+                        </include>
+                    </LinearLayout>
+                </FrameLayout>
             </LinearLayout>
-
-
-        </FrameLayout>
+        </LinearLayout>
     </TabHost>
 
 </LinearLayout>
