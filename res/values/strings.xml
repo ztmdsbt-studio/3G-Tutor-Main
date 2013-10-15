@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">wanzhuan</string>
@@ -6,5 +7,15 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_user_info">UserInfo</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_todo_exchange">TodoExchangeActivity</string>
+    <string name="dimness_autocode"><u>不清楚，换一张</u></string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="remove_from_favorite">移除收藏夹</string>
+    <string name="to_tutor">辅导</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+    <string name="title_activity_recommand">RecommandActivity</string>
 
 </resources>

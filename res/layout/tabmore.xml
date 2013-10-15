@@ -13,16 +13,16 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20px"
+            android:layout_marginLeft="20dp"
             android:src="@drawable/backup" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35px"
+            android:layout_marginLeft="35dp"
             android:text="更多"
             android:textColor="@color/white"
-            android:textSize="25px" />
+            android:textSize="25dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="20px"
+                android:layout_marginRight="20dp"
                 android:src="@drawable/refresh" />
         </LinearLayout>
     </LinearLayout>
@@ -51,7 +51,7 @@
             android:gravity="right" >
 
             <EditText
-                android:layout_width="300px"
+                android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.98"
                 android:background="@color/touming" />
@@ -72,7 +72,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20px"
+            android:layout_marginLeft="20dp"
             android:layout_toLeftOf="@id/tab_More_Search_LinLay"
             android:text="所有3G辅助分类"
             android:textColor="@color/green" />
@@ -88,14 +88,14 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25px"
+            android:layout_marginLeft="25dp"
             android:src="@drawable/tab_more_jingdong" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="25px"
+            android:padding="25dp"
              >
 
             <TextView

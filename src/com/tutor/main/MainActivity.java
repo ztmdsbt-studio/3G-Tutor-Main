@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 				WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
 		setContentView(R.layout.login);
 		tvwgmm = (TextView) findViewById(R.id.tvwgmm);
-		tvwgmm.setText(Html.fromHtml("<u>¼Ç×¡ÃÜÂë</u>"));
+		tvwgmm.setText(Html.fromHtml("<u>Íü¼ÇÃÜÂë</u>"));
 		loginBt = (ImageView) findViewById(R.id.loginBt);
 		loginBt.setOnClickListener(new OnClickListener() {
 			@Override
