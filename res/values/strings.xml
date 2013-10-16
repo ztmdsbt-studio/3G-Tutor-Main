@@ -19,5 +19,6 @@
     <string name="title_activity_change_password">ChangePassword</string>
     <string name="title_activity_recommand">RecommandActivity</string>
     <string name="find_pwd"><u>找回密码</u></string>
+    <string name="title_activity_entry">3G辅导</string>
 
 </resources>
